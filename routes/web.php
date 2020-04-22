@@ -32,13 +32,16 @@ Route::get('/shop/{product}','ShopController@show')->name('shop.show');
 Route::get('/contact','HomeController@contact')->name('contact');
 
 //cart product
-Route::get('/cart','HomeController@cart')->name('cart.index');
+Route::get('/cart','CartController@index')->name('cart.index'); //Get all added items in the cart
+Route::post('/cart','CartController@store')->name('cart.store'); //Add to Cart
+Route::get('/cart/reset','CartController@reset')->name('cart.reset'); //Dev Route for mass remove
+Route::delete('/cart/{product}','CartController@destroy')->name('cart.destroy'); //Remove item per item
 
-//Checkout
+//checkout
 Route::get('/checkout','HomeController@checkout')->name('checkout.index');
 Route::get('/checkout/success','HomeController@success')->name('checkout.success');
 
-//Orders
+//orders
 Route::get('/orders','HomeController@orders')->name('orders');
 
 

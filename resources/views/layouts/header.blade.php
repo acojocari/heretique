@@ -34,9 +34,6 @@
                         </li>
                     </ul>
 
-
-
-
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             @guest
                                 <li class="nav-item">
@@ -70,6 +67,10 @@
                                     <a href="{{route('cart.index')}}" class="nav-link">
                                         <i class="fas fa-shopping-cart"></i>
                                         Cart
+                                        @if(count(Cart::content())>0) {{-- TODO use cart instance? --}}
+                                            <span class="badge badge-primary">{{count(Cart::content())}}</span>
+                                        @endif
+
                                     </a>
                                 </li>
                     </ul>
@@ -77,5 +78,6 @@
             </div>
         </nav>
     </div>
+
 </header>
 <!-- End Header Area -->

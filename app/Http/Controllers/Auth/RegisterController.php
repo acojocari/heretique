@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+//To call attachTo method
+use Illuminate\Contracts\Auth\Authenticatable;
+use Treestoneit\ShoppingCart\Facades\Cart;
+use Illuminate\Http\Request;
+
 class RegisterController extends Controller
 {
     /*
@@ -69,4 +74,18 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
+
+    /**
+     * The user has been registered.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  mixed  $user
+     * @return mixed
+     */
+    protected function registered(Request $request, $user)
+    {
+        //Cart attach to user once user create
+        Cart::attachTo($user);
+    }
+
 }
