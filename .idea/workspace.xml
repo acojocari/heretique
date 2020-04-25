@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38e87d34-48f9-43a9-9053-fc2af4f0f4ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="38e87d34-48f9-43a9-9053-fc2af4f0f4ab" name="Default Changelist" comment="Payment implementation with https://github.com/stripe/stripe-php">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7e3f6b65-2d0a-43a9-9ab1-28f995c1d1da.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7e3f6b65-2d0a-43a9-9ab1-28f995c1d1da.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -406,7 +406,7 @@
       <workItem from="1587536361101" duration="33000" />
       <workItem from="1587572406955" duration="5249000" />
       <workItem from="1587623501898" duration="44000" />
-      <workItem from="1587796113080" duration="22672000" />
+      <workItem from="1587796113080" duration="22934000" />
     </task>
     <task id="LOCAL-00001" summary="Shopping cart implementation shopping-cart Laravel Bundle https://github.com/treeStoneIT/shopping-cart">
       <created>1587578169149</created>
@@ -436,11 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1587838883251</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Payment implementation with https://github.com/stripe/stripe-php">
+      <created>1587839103439</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587839103439</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134484000" />
+    <option name="totallyTimeSpent" value="134746000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -454,8 +461,8 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.81407034" visible="true" weight="0.21376519" />
-      <window_info id="Structure" order="1" sideWeight="0.18592964" side_tool="true" visible="true" weight="0.21376519" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.87139106" visible="true" weight="0.21376519" />
+      <window_info id="Structure" order="1" sideWeight="0.12860893" side_tool="true" visible="true" weight="0.21376519" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -466,8 +473,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3232682" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49959514" visible="true" weight="0.29307282" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3232682" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49959514" weight="0.29307282" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50040483" side_tool="true" weight="0.21669628" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3285968" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3285968" />
@@ -572,7 +579,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Shopping cart implementation shopping-cart Laravel Bundle https://github.com/treeStoneIT/shopping-cart" />
     <MESSAGE value="Payment implementation with https://stripe.com/" />
-    <option name="LAST_COMMIT_MESSAGE" value="Payment implementation with https://stripe.com/" />
+    <MESSAGE value="Payment implementation with https://github.com/stripe/stripe-php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Payment implementation with https://github.com/stripe/stripe-php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
