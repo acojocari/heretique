@@ -1,4 +1,4 @@
-@extends('layouts.master');
+@extends('layouts.master')
 
 @section('content')
 
@@ -21,6 +21,12 @@
     <!--================Order Details Area =================-->
     <section class="order_details section_gap">
         <div class="container">
+            @if ($message=Session::get('success'))
+                <div class="alert alert-success alert-block">
+                    <button type="button" class="close" data-dismiss="alert">x</button>
+                    {{$message}}
+                </div>
+            @endif
             <h3 class="title_confirmation">Thank you. Your order has been received.</h3>
             <div class="row order_d_inner">
                 <div class="col-lg-4">
