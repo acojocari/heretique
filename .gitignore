@@ -3,9 +3,11 @@
 /public/storage
 /storage/*.key
 /vendor
-.idea/workspace.xml
+.vagrant/
+.idea
 .env
 .env.backup
+composer.lock
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
