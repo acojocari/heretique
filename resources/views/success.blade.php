@@ -33,10 +33,11 @@
                     <div class="details_item">
                         <h4>Order Info</h4>
                         <ul class="list">
-                            <li><a href="#"><span>Order number</span> : 60235</a></li>
-                            <li><a href="#"><span>Date</span> : Los Angeles</a></li>
-                            <li><a href="#"><span>Total</span> : USD 2210</a></li>
-                            <li><a href="#"><span>Payment method</span> : Check payments</a></li>
+                            <li><a href="#"><span>Order number</span> : {{$order->id}}</a>
+                            </li> {{-- TODO remplace it by a PO number --}}
+                            <li><a href="#"><span>Date</span> : {{$order->created_at}}</a></li>
+                            <li><a href="#"><span>Total</span> : {{round($order->paiement_total,2)}} EUR</a></li>
+                            <li><a href="#"><span>Payment method</span> : Stripe</a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,10 +45,10 @@
                     <div class="details_item">
                         <h4>Billing Address</h4>
                         <ul class="list">
-                            <li><a href="#"><span>Street</span> : 56/8</a></li>
-                            <li><a href="#"><span>City</span> : Los Angeles</a></li>
-                            <li><a href="#"><span>Country</span> : United States</a></li>
-                            <li><a href="#"><span>Postcode </span> : 36952</a></li>
+                            <li><a href="#"><span>Address</span> : {{$order->paiement_address}}</a></li>
+                            <li><a href="#"><span>City</span> : {{$order->paiement_city}}</a></li>
+                            <li><a href="#"><span>Phone</span> : {{$order->paiement_number}}</a></li>
+                            <li><a href="#"><span>Postcode </span> : {{$order->paiement_zip}}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,10 +56,10 @@
                     <div class="details_item">
                         <h4>Shipping Address</h4>
                         <ul class="list">
-                            <li><a href="#"><span>Street</span> : 56/8</a></li>
-                            <li><a href="#"><span>City</span> : Los Angeles</a></li>
-                            <li><a href="#"><span>Country</span> : United States</a></li>
-                            <li><a href="#"><span>Postcode </span> : 36952</a></li>
+                            <li><a href="#"><span>Address</span> : {{$order->paiement_address}}</a></li>
+                            <li><a href="#"><span>City</span> : {{$order->paiement_city}}</a></li>
+                            <li><a href="#"><span>Phone</span> : {{$order->paiement_number}}</a></li>
+                            <li><a href="#"><span>Postcode </span> : {{$order->paiement_zip}}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -75,61 +76,21 @@
                         </tr>
                         </thead>
                         <tbody>
+                        @foreach($order->products as $product)
+                            {{-- dd($product) --}}
                         <tr>
                             <td>
-                                <p>Pixelstore fresh Blackberry</p>
+                                <p>{{$product->name}}</p>
                             </td>
                             <td>
-                                <h5>x 02</h5>
+                                <h5>x {{$product->pivot->quantity}}</h5>
                             </td>
                             <td>
-                                <p>$720.00</p>
+                                <p>{{round($product->price * $product->pivot->quantity,2)}} €</p>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <p>Pixelstore fresh Blackberry</p>
-                            </td>
-                            <td>
-                                <h5>x 02</h5>
-                            </td>
-                            <td>
-                                <p>$720.00</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Pixelstore fresh Blackberry</p>
-                            </td>
-                            <td>
-                                <h5>x 02</h5>
-                            </td>
-                            <td>
-                                <p>$720.00</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4>Subtotal</h4>
-                            </td>
-                            <td>
-                                <h5></h5>
-                            </td>
-                            <td>
-                                <p>$2160.00</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4>Shipping</h4>
-                            </td>
-                            <td>
-                                <h5></h5>
-                            </td>
-                            <td>
-                                <p>Flat rate: $50.00</p>
-                            </td>
-                        </tr>
+
+                        @endforeach
                         <tr>
                             <td>
                                 <h4>Total</h4>
@@ -138,7 +99,7 @@
                                 <h5></h5>
                             </td>
                             <td>
-                                <p>$2210.00</p>
+                                <p>{{$order->paiement_total}} €</p>
                             </td>
                         </tr>
                         </tbody>

@@ -88,12 +88,16 @@ class CheckoutController extends Controller
             return redirect()->route('home');
         }
 
+        //Get the purchased items
+        $order = Order::latest()->first();
+
         //Clean up the cart if success
         Cart::destroy();
-
         //Clean up the coupon session if success
         session()->forget('coupon');
 
-        return view('success');
+        return view('success', [
+            'order' => $order
+        ]);
     }
 }

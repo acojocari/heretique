@@ -19,4 +19,14 @@ class HomeController extends Controller
             'products'=>$products
         ]);
     }
+
+    public function orders()
+    {
+
+        $user = auth()->user();
+
+        return view('orders', [
+            'orders' => $user->orders
+        ]);
+    }
 }
