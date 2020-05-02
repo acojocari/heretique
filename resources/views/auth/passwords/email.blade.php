@@ -2,6 +2,10 @@
 
 @section('content')
 
+    <!-- Start Banner Area -->
+    {{ Breadcrumbs::render('forgotPassword') }}
+    <!-- End Banner Area -->
+
     <!--================Login Box Area =================-->
     <section class="login_box_area section_gap">
         <div class="container">
