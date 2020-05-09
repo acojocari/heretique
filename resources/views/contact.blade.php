@@ -27,7 +27,7 @@
                         </div>
                         <div class="info_item">
                             <i class="lnr lnr-envelope"></i>
-                            <h6><a href="#">support@colorlib.com</a></h6>
+                            <h6><a href="#">support@test.com</a></h6>
                             <p>Send us your query anytime!</p>
                         </div>
                     </div>

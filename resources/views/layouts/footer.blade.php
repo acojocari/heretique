@@ -6,8 +6,8 @@
                 <div class="single-footer-widget">
                     <h6>About Us</h6>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
-                        magna aliqua.
+                        Hérétique vient du mot grec αἱρετικός, "celle qui est libre de choisir".
+                        Couture. Recyclage. Feminisme. Marseille.
                     </p>
                 </div>
             </div>
@@ -44,6 +44,7 @@
                 <div class="single-footer-widget mail-chimp">
                     <h6 class="mb-20">Instragram Feed</h6>
                     <ul class="instafeed d-flex flex-wrap">
+                        {{--TODO https://github.com/Dymantic/laravel-instagram-feed --}}
                         <li><img src="img/i1.jpg" alt=""></li>
                         <li><img src="img/i2.jpg" alt=""></li>
                         <li><img src="img/i3.jpg" alt=""></li>
@@ -59,11 +60,11 @@
                 <div class="single-footer-widget">
                     <h6>Follow Us</h6>
                     <p>Let us be social</p>
+                    {{--TODO Refactor : Use Voyager Tool --}}
                     <div class="footer-social d-flex align-items-center">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
+                        <a href="https://www.instagram.com/toutesheretiques/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com/em_piru"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/pau.greenvalleyblond"><i class="fa fa-facebook"></i></a>
                     </div>
                 </div>
             </div>

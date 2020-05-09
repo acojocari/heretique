@@ -45,48 +45,48 @@
         <div class="container">
             <div class="row features-inner">
                 <!-- single features -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-features">
-                        <div class="f-icon">
-                            <img src="img/features/f-icon1.png" alt="">
+            {{--                <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="single-features">
+                                    <div class="f-icon">
+                                        <img src="img/features/f-icon1.png" alt="">
+                                    </div>
+                                    <h6>Free Delivery</h6>
+                                    <p>Free Shipping on all order</p>
+                                </div>
+                            </div>
+                            <!-- single features -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="single-features">
+                                    <div class="f-icon">
+                                        <img src="img/features/f-icon2.png" alt="">
+                                    </div>
+                                    <h6>Return Policy</h6>
+                                    <p>Free Shipping on all order</p>
+                                </div>
+                            </div>
+                            <!-- single features -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="single-features">
+                                    <div class="f-icon">
+                                        <img src="img/features/f-icon3.png" alt="">
+                                    </div>
+                                    <h6>24/7 Support</h6>
+                                    <p>Free Shipping on all order</p>
+                                </div>
+                            </div>
+                            <!-- single features -->
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="single-features">
+                                    <div class="f-icon">
+                                        <img src="img/features/f-icon4.png" alt="">
+                                    </div>
+                                    <h6>Secure Payment</h6>
+                                    <p>Free Shipping on all order</p>
+                                </div>
+                            </div>
                         </div>
-                        <h6>Free Delivery</h6>
-                        <p>Free Shipping on all order</p>
                     </div>
-                </div>
-                <!-- single features -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-features">
-                        <div class="f-icon">
-                            <img src="img/features/f-icon2.png" alt="">
-                        </div>
-                        <h6>Return Policy</h6>
-                        <p>Free Shipping on all order</p>
-                    </div>
-                </div>
-                <!-- single features -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-features">
-                        <div class="f-icon">
-                            <img src="img/features/f-icon3.png" alt="">
-                        </div>
-                        <h6>24/7 Support</h6>
-                        <p>Free Shipping on all order</p>
-                    </div>
-                </div>
-                <!-- single features -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-features">
-                        <div class="f-icon">
-                            <img src="img/features/f-icon4.png" alt="">
-                        </div>
-                        <h6>Secure Payment</h6>
-                        <p>Free Shipping on all order</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </section>--}}
     <!-- end features Area -->
 
     <!-- start product Area -->
@@ -186,27 +186,27 @@
     <!-- end product Area -->
 
     <!-- Start brand Area -->
-    <section class="brand-area section_gap">
-        <div class="container">
-            <div class="row">
-                <a class="col single-img" href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/brand/1.png" alt="">
-                </a>
-                <a class="col single-img" href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/brand/2.png" alt="">
-                </a>
-                <a class="col single-img" href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/brand/3.png" alt="">
-                </a>
-                <a class="col single-img" href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/brand/4.png" alt="">
-                </a>
-                <a class="col single-img" href="#">
-                    <img class="img-fluid d-block mx-auto" src="img/brand/5.png" alt="">
-                </a>
-            </div>
-        </div>
-    </section>
+            {{--    <section class="brand-area section_gap">
+                    <div class="container">
+                        <div class="row">
+                            <a class="col single-img" href="#">
+                                <img class="img-fluid d-block mx-auto" src="img/brand/1.png" alt="">
+                            </a>
+                            <a class="col single-img" href="#">
+                                <img class="img-fluid d-block mx-auto" src="img/brand/2.png" alt="">
+                            </a>
+                            <a class="col single-img" href="#">
+                                <img class="img-fluid d-block mx-auto" src="img/brand/3.png" alt="">
+                            </a>
+                            <a class="col single-img" href="#">
+                                <img class="img-fluid d-block mx-auto" src="img/brand/4.png" alt="">
+                            </a>
+                            <a class="col single-img" href="#">
+                                <img class="img-fluid d-block mx-auto" src="img/brand/5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </section>--}}
     <!-- End brand Area -->
 
 @stop
