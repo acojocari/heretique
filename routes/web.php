@@ -29,7 +29,8 @@ Route::get('/shop','ShopController@index')->name('shop.index');
 Route::get('/shop/{product}','ShopController@show')->name('shop.show');
 
 //contact page
-Route::get('/contact','HomeController@contact')->name('contact');
+Route::get('/contact', 'HomeController@contact')->name('contact'); //Get contact form
+Route::post('/contact', 'HomeController@contactMail')->name('contact.mail'); //Send the message from contact form by email
 
 //cart product
 Route::get('/cart','CartController@index')->name('cart.index'); //Get all added items in the cart

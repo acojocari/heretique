@@ -30,11 +30,11 @@
                 <div class="filter-bar d-flex flex-wrap align-items-center">
                     <div class="dropdown">
                         <a class="btn" href="{{route('shop.index',['category'=>request()->category,'sort' => 'asc'])}}">
-                            Prix croissant
+                            Increasing Price
                         </a>
                         <a class="btn"
                            href="{{route('shop.index',['category'=>request()->category,'sort' => 'desc'])}}">
-                            Prix décroissant
+                            Decreasing Price
                         </a>
                     </div>
                     <div class="pagination ml-auto">
@@ -69,11 +69,11 @@
                 <div class="filter-bar d-flex flex-wrap align-items-center mb-5">
                     <div class="dropdown">
                         <a class="btn" href="{{route('shop.index',['category'=>request()->category,'sort' => 'asc'])}}">
-                            Prix croissant
+                            Increasing Price
                         </a>
                         <a class="btn"
                            href="{{route('shop.index',['category'=>request()->category,'sort' => 'desc'])}}">
-                            Prix décroissant
+                            Decreasing Price
                         </a>
                     </div>
                     <div class="pagination ml-auto">

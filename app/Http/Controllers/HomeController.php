@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\OrderProduct;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -53,5 +54,23 @@ class HomeController extends Controller
     public function contact()
     {
         return view('contact');
+    }
+
+    public function contactMail(Request $request)
+    {
+
+        $data = [
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'bodyMessage' => $request->message,
+        ];
+
+        Mail::send('emails.contact', $data, function ($m) use ($data) {
+            $m->from($data['email']);
+            $m->to('support@demo.com'); //TODO Refactor : To add it into confing file
+            $m->subject($data['subject']);
+        });
+
+        return back()->with('success', 'Thanks for contacting us!');
     }
 }
