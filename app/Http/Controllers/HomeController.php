@@ -73,4 +73,9 @@ class HomeController extends Controller
 
         return back()->with('success', 'Thanks for contacting us!');
     }
+
+    public function phpinfo()
+    {
+        phpinfo();
+    }
 }
