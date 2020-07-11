@@ -19,7 +19,7 @@
  */
 
 //phpinfo
-Route::get('/phpinfo','HomeController@phpinfo')->name('phpinfo');
+//Route::get('/phpinfo','HomeController@phpinfo')->name('phpinfo');
 
 //main page
 Route::get('/','HomeController@home')->name('home');
