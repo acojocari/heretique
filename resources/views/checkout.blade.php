@@ -19,28 +19,27 @@
                         <form class="row contact_form" action="{{route('checkout.store')}}" method="POST" id="payment-form">
                           @csrf
                             <div class="col-md-6 form-group p_star">
-                                <input type="text" class="form-control" id="firstname" name="firstname">
-                                <span class="placeholder" data-placeholder="First name"></span>
+                                <input type="text" class="form-control" id="firstname" name="firstname"
+                                       placeholder="First name">
                             </div>
                             <div class="col-md-6 form-group p_star">
-                                <input type="text" class="form-control" id="lastname" name="lastname">
-                                <span class="placeholder" data-placeholder="Last name"></span>
+                                <input type="text" class="form-control" id="lastname" name="lastname"
+                                       placeholder="Last name">
                             </div>
                             <div class="col-md-6 form-group p_star">
-                                <input type="text" class="form-control" id="number" name="number">
-                                <span class="placeholder" data-placeholder="Phone number"></span>
+                                <input type="text" class="form-control" id="number" name="number"
+                                       placeholder="Phone number">
                             </div>
                             <div class="col-md-6 form-group p_star">
-                                <input type="text" class="form-control" id="email" name="email">
-                                <span class="placeholder" data-placeholder="Email Address"></span>
+                                <input type="text" class="form-control" id="email" name="email"
+                                       placeholder="Email Address">
                             </div>
                             <div class="col-md-12 form-group p_star">
-                                <input type="text" class="form-control" id="address" name="address">
-                                <span class="placeholder" data-placeholder="Address"></span>
+                                <input type="text" class="form-control" id="address" name="address"
+                                       placeholder="Address">
                             </div>
                             <div class="col-md-12 form-group p_star">
-                                <input type="text" class="form-control" id="city" name="city">
-                                <span class="placeholder" data-placeholder="Town/City"></span>
+                                <input type="text" class="form-control" id="city" name="city" placeholder="Town/City">
                             </div>
                             <div class="col-md-12 form-group">
                                 <input type="text" class="form-control" id="zip" name="zip" placeholder="Postcode/ZIP">
