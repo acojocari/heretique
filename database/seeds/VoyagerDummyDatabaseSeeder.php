@@ -21,7 +21,9 @@ class VoyagerDummyDatabaseSeeder extends Seeder
         $this->seed('UsersTableSeeder');
         $this->seed('PostsTableSeeder');
         $this->seed('PagesTableSeeder');
-        $this->seed('TranslationsTableSeeder');
-        $this->seed('PermissionRoleTableSeeder');
+        //TODO TranslationsTableSeeder doesn't work need to update the latest Voyager app
+        //$this->seed('TranslationsTableSeeder');
+        //Duplicate call, see VoyagerDatabaseSeeder.php
+        //$this->seed('PermissionRoleTableSeeder');
     }
 }
